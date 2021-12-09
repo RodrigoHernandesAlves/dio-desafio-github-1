@@ -1,0 +1,164 @@
+Link para dowload do git https://git-scm.com/downloads
+
+O git bash e um terminal extendido para otimizar o uso do git.
+
+Instruções git e github
+
+Comandos para o github via terminal
+
+git init = Ele serve para inicializar o processo de controle de versao // repositorio local
+
+git clone = Ter acesso a um servidor remoto para pegar o projeto
+
+git add. ou git add <<nome_arquivo>> = E para adicionar arquivos (mover) e para o assim o git possa rastrer os arquivos e assim poderem ser commitados
+
+git commit -m 'mensagem de commit' = E uma forma de salvar as alteracoes e assim poder rastrear /// - m e um parametro de mensagem de commit
+
+git push = E uma forma de publicar as alteracoes e um servidor remoto com um grupo // repositorio remoto
+
+git pull = E para obter as alteracoes no servidor local conforme o que e baixado do servidor remoto
+
+git merge = Juntar as alteracoes que esta em uma branch para a branch master juntar as branch // resolucao de conflitos 
+
+git status = E um comando para prover informacoes sobre o status atual do projeto, se foi alterado 
+
+git log = Historico de alteracoes que o projeto vem sofrendo
+
+git branch <<nome da branch>> = E quando voce cria um novo ramo ou branch master // Serve para visualizar a listagem de todas as branchs criadas no repositorio local
+
+Iniciando um repositorio GITHUB
+
+Comandos Linux
+
+1-mkdir projeto-curso-git // criar repositorio
+2-cd projeto-curso-git // acessar repositorio
+3-git init // A medida que for altertada os arquivos o mesmo vai mostrando
+4-touch index.html // criar arquivo no diretorio
+
+visite https://git-scm.com/docs
+
+Curso git dia 02-12-2021
+
+windows 
+
+cd - Navegar entre pastas 
+
+dir - listas pastas e diretorios
+
+mkdir - Criar pasta
+
+rmdir nome /S /Q - Deleta a pasta e repositorio
+
+cls - Limpar a tela do terminal
+
+tab - Auto completar 
+
+echo - printa o que for digitado
+
+echo hello > hello.txt - Cria o arquivo em txt hello.txt
+
+del e o nome da arquivo - Deleta os arquivos na pasta e não a pasta
+
+Entendendo como o git funciona
+
+SHA1 = E um algoritimo de encriptação ( sha significa secure hash algorithm) e um conjunto de funções hash criptografadas projetadas pela nsa
+
+conjunto de caracteres de 40 digitos identificador ( comando echo 'ola mundo' | openssl sha1)
+
+Objetos fundamentais
+
+Blob = guarda os objetos em metadados ( comando echo -e 'blob 9\0conteudo' | openssl sha1 ) tem o sha1 do arquivo
+
+Trees = Armazenam blob e contem tambem metadados e o nome do arquivo, monta a estrutura de onde esta os arquivos e mudando um arquivo altera tudo
+
+Commits = E o objeto que junto tudo na alteração que foi feita, ele aponta para parente,arvore, autor, mensagem e timestamp
+o sha1 desse commit e o hash de toda essa informação 
+
+Sistema distribuido = Por que trabalha com varias pessoas
+
+Segurança = Por que e confiavel e a estrutura que mantem o git
+
+Chave ssh == Conexão segura e incriptada entre 2 maquinas e chaves publica e privada
+
+ssh-keygen -t ed25519 -c rodrigohernandesalves@hamil.com
+
+chave id_ed25519.pub
+
+inicializar o ssh agente ( comando = eval $(ssh-agent -s)
+
+ssh-add id_ed25519
+
+
+Token == De acesso pessoal 
+
+Primeiros comandos do git 
+
+ls -a --- ver arquivos ocultos do git 
+
+git config --global user.email "rodrigohernandesalves@gmail.com"
+
+git config --global user.name "rodrigohernandesalves"
+
+
+git add* 
+
+git commit -m "commit inicial" 
+
+
+tracked 3 divisões unmodified, modified e staged 
+
+
+Criando conta no github e criando um repositorio 
+
+git config -- list == traz todas a configurações e mostra o email e user.name usados para serem iguais aos do github
+
+git config -- global -- unset user.email ou user.name == usado para trocar as informações de email e user.name
+
+colocando o caminho do repositorio github
+
+git remote add origin https://github.com/RodrigoHernandesAlves/Livro-receitas.git
+
+git remote -v == listas os repositorios cadastrados 
+
+enviando codigo para o github
+
+git remote origin master
+
+git push origin master == enviando codigo para o git 
+
+git pull origin master = puxando o codigo para a maquina
+
+git clone https://github.com/RodrigoHernandesAlves/Livro-receitas.git == clona o projeto para a pasta especificada 
+
+ls -a mostra os repositorios ocultos
+
+Resolvendo conflitos no github 
+
+Editando os arquivos manualmente e depois fazendo o git add* e depois o git push origin master novamente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
